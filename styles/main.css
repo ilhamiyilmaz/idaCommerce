@@ -563,11 +563,229 @@ nav.navbar.navbar-expand-lg {
     margin-top: 0.5rem;
   }
 
-  .slider .carousel-control-next, .slider .carousel-control-prev {
+  .slider .carousel-control-next,
+  .slider .carousel-control-prev {
     opacity: 1;
   }
 
   .footer-mid h6 {
     margin-top: 1.5rem !important;
+  }
+}
+
+.thumbnails {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.thumbnail-carousel .owl-nav button {
+  background: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.thumbnail-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 34px);
+  left: 0;
+  margin-left: -37px !important;
+}
+
+.thumbnail-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 34px);
+  right: 0;
+  margin-right: -37px !important;
+}
+
+.thumbnail-carousel .owl-nav button:hover .owl-navigator {
+  opacity: 1;
+}
+
+.product .name {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 1rem;
+}
+
+.product .regcode {
+  margin-right: 1rem;
+}
+
+.product .alert {
+  padding: 0.3rem 0.6rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.product .fiyat {
+  font-weight: bold;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.product .options {
+  margin-bottom: 1.5rem;
+}
+
+.product .options .btn:focus,
+.product .options .btn:hover,
+.product .options .btn.focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.breadcrumbs {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.breadcrumbs img {
+  height: 12px;
+  margin: 0px 10px;
+  margin-top: -2.5px;
+}
+
+.product .video-wrapper {
+  position: absolute;
+  z-index: 6400;
+  right: 15px;
+  margin-top: -45px;
+  padding-right: 10px;
+}
+
+.product .video {
+  font-size: 26px;
+  border: 3px solid #12325e;
+  width: 45px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  top: -8px;
+}
+
+.product .video a {
+  color: #12325e;
+}
+
+button.btn.btn-decrement.btn-outline-secondary.btn-minus {
+  background: #6c757d;
+  color: #fff;
+}
+
+button.btn.btn-increment.btn-outline-secondary.btn-plus {
+  background: #6c757d;
+  color: #fff;
+}
+
+.product .actions {
+  margin-top: 1.5rem;
+}
+
+button.btn.btn-main {
+  background: #12325e;
+  color: #fff;
+  letter-spacing: 1px;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-align: center;
+}
+
+button.btn.btn-main:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button.btn.btn-main:hover {
+  background: #1c4d91;
+}
+
+.product button.btn.btn-main {
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
+button.btn.btn-wish {
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+button.btn.btn-wish:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.product .shipping .shipping-wrapper {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.product .share {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product .nav-tabs .nav-link {
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  font-weight: bold;
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+.product .nav-tabs .nav-link.active {
+  background: #000;
+  color: #fff;
+}
+
+.product .tab-content {
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+}
+
+.product .yorum {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.product .yorum p:last-of-type {
+  margin: 0;
+}
+
+.product .yorum h6 {
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .product .name {
+    margin-top: 1.5rem;
+  }
+
+  .product .actions .btn-main {
+    margin: 1rem 0;
   }
 }

@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idaCommerce</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/easyzoom.css">
+    <script src="https://kit.fontawesome.com/18326fdc04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" />
+
+<body>
+    <!--header wrapper-->
+    <section class="header">
+        <!--header top-->
+        <section class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 d-sm-flex d-block text-mobile-center">
+                        <div class="callcenter">
+                            Çağrı Merkezi: <a href="tel:02422478797" class="f-bold">+90 0242 247 87 97</a>
+                        </div>
+                        <div class="whatsapp ml-3">
+                            WhatsApp: <a href="https://wa.me/905323250153" class="f-bold" target="_blank">+90 532 325 01
+                                53</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 text-right d-sm-flex flex-row-reverse d-block text-mobile-center">
+                        <div class="flags ml-3">
+                            <a href="#" class="mr-2"><img src="images/tr.png"><span>TR</span></a>
+                            <a href="#"><img src="images/en.png"><span>EN</span></a>
+                        </div>
+                        <div class="user-menu">
+                            <a href="#">Sipariş Takip</a>
+                            <a href="#">Alışveriş Yardım</a>
+                            <a href="#">Bize Ulaşın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/header top-->
+        <!--header bot-->
+        <section class="header-bot">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-sm-4 logo-holder text-mobile-center">
+                        <div class="col-sm-8">
+                            <a href="#">
+                                <img src="images/ida-logo.png" class="w-100">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 search-holder">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ne aramıştınız?" aria-label="search"
+                                aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                                <button class="btn btn-main" type="button">ARA</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 my-menu">
+                        <div class="row d-sm-flex flex-row-reverse d-block text-mobile-center">
+                            <div class="col-3 text-center">
+                                <a href="#">
+                                    <img src="images/sepet.svg">
+                                    <span>Sepetim</span>
+                                </a>
+                            </div>
+                            <div class="col-3 text-center">
+                                <a href="#">
+                                    <img src="images/giris.svg">
+                                    <span>Hesabım</span>
+                                </a>
+                            </div>
+                            <div class="col-3 text-center">
+                                <a href="#">
+                                    <img src="images/favori.svg">
+                                    <span>Favorilerim</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/header bot-->
+    </section>
+    <!--/header wrapper-->
+
+    <!--menu-->
+    <section class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg"> <a href="#"
+                            class="navbar-brand font-weight-bold d-block d-lg-none">Kategoriler</a> <button
+                            type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars"
+                            aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <span
+                                class="navbar-toggler-icon"><i class="fas fa-bars"></i></span> </button>
+                        <div id="navbarContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">Telefon & Tablet</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Cep
+                                                                        Telefonları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Android
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Diğer
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Tabletler</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Android
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Windows
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Akıllı Saat ve
+                                                                        Bileklik</a></h6>
+                                                                <h6 class="font-weight-bold"><a href="">Kulaklıklar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak İçi
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak Üstü
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bluetooth
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Telefon
+                                                                        Aksesuarları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablolu
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablosuz
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kılıf ve
+                                                                            Koruyucular</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Araç
+                                                                            Kitleri</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Telefonlar</a></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/34.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">Bilgisayar</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Notebook &
+                                                                        Laptop</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Notebook</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">MacBook</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Gaming
+                                                                            Laptop</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Bilgisayar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iMac
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">All-in-One
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Oyun
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Çevre
+                                                                        Birimleri</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Mouse</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Klavye</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablo ve
+                                                                            Adaptör</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bilgisayar
+                                                                            Hoparlörü</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Ağ & Modem</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Modemler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Menzil
+                                                                            Arttırıcılar</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Yazıcılar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Lazer
+                                                                            Yazıcılar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Püskürtmerli
+                                                                            Yazıcılar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Nokta
+                                                                            Vuruşlu Yazıcılar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Monitörler</a>
+                                                                </h6>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Veri
+                                                                        Depolama</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Taşınabilir
+                                                                            Harici Disk</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Flash
+                                                                            Disk</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Hafıza
+                                                                            Kartı</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/35.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">Beyaz Eşya</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Cep
+                                                                        Telefonları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Android
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Diğer
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Tabletler</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Android
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Windows
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Akıllı Saat ve
+                                                                        Bileklik</a></h6>
+                                                                <h6 class="font-weight-bold"><a href="">Kulaklıklar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak İçi
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak Üstü
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bluetooth
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Telefon
+                                                                        Aksesuarları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablolu
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablosuz
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kılıf ve
+                                                                            Koruyucular</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Araç
+                                                                            Kitleri</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Telefonlar</a></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/36.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">TV & Ses ve Görüntü</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Notebook &
+                                                                        Laptop</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Notebook</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">MacBook</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Gaming
+                                                                            Laptop</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Bilgisayar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iMac
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">All-in-One
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Oyun
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Çevre
+                                                                        Birimleri</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Mouse</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Klavye</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablo ve
+                                                                            Adaptör</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bilgisayar
+                                                                            Hoparlörü</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Ağ & Modem</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Modemler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Menzil
+                                                                            Arttırıcılar</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Yazıcılar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Lazer
+                                                                            Yazıcılar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Püskürtmerli
+                                                                            Yazıcılar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Nokta
+                                                                            Vuruşlu Yazıcılar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Monitörler</a>
+                                                                </h6>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Veri
+                                                                        Depolama</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Taşınabilir
+                                                                            Harici Disk</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Flash
+                                                                            Disk</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Hafıza
+                                                                            Kartı</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/2.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">Elektrikli Ev Aletleri</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Cep
+                                                                        Telefonları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Android
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Diğer
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Tabletler</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Android
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Windows
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Akıllı Saat ve
+                                                                        Bileklik</a></h6>
+                                                                <h6 class="font-weight-bold"><a href="">Kulaklıklar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak İçi
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak Üstü
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bluetooth
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Telefon
+                                                                        Aksesuarları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablolu
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablosuz
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kılıf ve
+                                                                            Koruyucular</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Araç
+                                                                            Kitleri</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Telefonlar</a></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/37.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">Kişisel Bakım</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Notebook &
+                                                                        Laptop</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Notebook</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">MacBook</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Gaming
+                                                                            Laptop</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Bilgisayar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iMac
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">All-in-One
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Oyun
+                                                                            Bilgisayar</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Çevre
+                                                                        Birimleri</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Mouse</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Klavye</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablo ve
+                                                                            Adaptör</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bilgisayar
+                                                                            Hoparlörü</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Ağ & Modem</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Modemler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Menzil
+                                                                            Arttırıcılar</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Yazıcılar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Lazer
+                                                                            Yazıcılar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Püskürtmerli
+                                                                            Yazıcılar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Nokta
+                                                                            Vuruşlu Yazıcılar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Monitörler</a>
+                                                                </h6>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Veri
+                                                                        Depolama</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Taşınabilir
+                                                                            Harici Disk</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Flash
+                                                                            Disk</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Hafıza
+                                                                            Kartı</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/38.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        class="nav-link dropdown-toggle font-weight-bold">Kamera & Fotoğraf</a>
+                                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                                        <div class="container">
+                                            <div class="row bg-white rounded-0 m-0 shadow-sm">
+                                                <div class="col-lg-7 col-xl-9">
+                                                    <div class="p-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Cep
+                                                                        Telefonları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0">Android
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Diğer
+                                                                            Telefonlar</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Tabletler</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Android
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">iOS
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Windows
+                                                                            Tabletler</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Akıllı Saat ve
+                                                                        Bileklik</a></h6>
+                                                                <h6 class="font-weight-bold"><a href="">Kulaklıklar</a>
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak İçi
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kulak Üstü
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Bluetooth
+                                                                            Kulaklık</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <h6 class="font-weight-bold"><a href="">Telefon
+                                                                        Aksesuarları</a></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablolu
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kablosuz
+                                                                            Şarj Cihazları</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Kılıf ve
+                                                                            Koruyucular</a>
+                                                                    </li>
+                                                                    <li class="nav-item"><a href=""
+                                                                            class="nav-link text-small pb-0 ">Araç
+                                                                            Kitleri</a>
+                                                                    </li>
+                                                                </ul>
+                                                                <h6 class="font-weight-bold"><a href="">Masaüstü
+                                                                        Telefonlar</a></h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-xl-3 px-0 d-none d-lg-block">
+                                                    <img src="images/kbanner/39.jpg" class="w-100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/menu-->
+
+    <!--dynamic category-->
+    <!-- <section class="dynamic-category pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 pr-0">
+                    <a href="#">
+                        <img src="images/spot/34.jpg" class="w-100">
+                    </a>
+                </div>
+                <div class="col-sm-9 pl-0">
+                    <div class="carousel-container p-4">
+                        <div class="product-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder">
+                                        <img src="images/urunler/1.jpg">
+                                    </div>
+                                    <h5>₺1,000.00</h5>
+                                    <span>Huawei P30 Lite 64 GB</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label yeni">
+                                    <span>YENİ</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder">
+                                        <img src="images/urunler/2.jpg">
+                                    </div>
+                                    <h5>₺2,000.00</h5>
+                                    <span>Redmi Note 8 Pro 128 / 512 GB Siyah</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label indirim">
+                                    <span><strong>%10</strong> İNDİRİM</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder">
+                                        <img src="images/urunler/3.jpg">
+                                    </div>
+                                    <h5>₺3,500.00</h5>
+                                    <span>Samsung Galaxy S20 Ultra 128 GB Gri</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label yeni">
+                                    <span>YENİ</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder">
+                                        <img src="images/urunler/4.jpg">
+                                    </div>
+                                    <h5>₺3,750.99</h5>
+                                    <span>Oppo Reno2 256 GB Yeşil</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label indirim">
+                                    <span><strong>%10</strong> İNDİRİM</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder">
+                                        <img src="images/test/1.jpg">
+                                    </div>
+                                    <h5>₺1,500.00</h5>
+                                    <span>Front-End wo. Crop 1</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label yeni">
+                                    <span>YENİ</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder">
+                                        <img src="images/test/2.jpg">
+                                    </div>
+                                    <h5>₺1,000.00</h5>
+                                    <span>Front-End wo. Crop 2</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label indirim">
+                                    <span><strong>%10</strong> İNDİRİM</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder-cropped" style="background-image: url(images/test/1.jpg);">
+                                    </div>
+                                    <h5>₺2,250.00</h5>
+                                    <span>Front-End w. Crop 1</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label yeni">
+                                    <span>YENİ</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <div class="img-holder-cropped" style="background-image: url(images/test/2.jpg);">
+                                    </div>
+                                    <span>Front-End w. Crop 2</span>
+                                </a>
+                                <div class="favori">
+                                    <a href="#">
+                                        <img src="images/favori2.svg" class="w-100">
+                                    </a>
+                                </div>
+                                <div class="label indirim">
+                                    <span><strong>%10</strong> İNDİRİM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--/dynamic category-->
+
+    <!--product-->
+    <section class="product pb-4">
+        <div class="container">
+            <div class="row m-0">
+                <div class="col breadcrumbs">
+                    <a href="#"><i class="fas fa-home"></i></a><span><img src="images/002-next.svg"></span>
+                    <a href="#">bilgisayar</a><span><img src="images/002-next.svg"></span>
+                    <a href="#">masaüstü bilgisayar</a><span><img src="images/002-next.svg"></span>
+                    <a href="#">oyun bilgisayarları</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <!--Buraya bir count ile if ekeleylim eğer 1 adet foto varsa aşağıda "sadece_bu" yazan div ve içeriğini bassın-->
+                    <div class="row ">
+                        <div class="col">
+                            <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
+                                <a href="example-images/pr-1.jpg">
+                                    <img src="example-images/pr-1-standart.jpg" alt="" class="w-100" />
+                                </a>
+                            </div>
+                            <!--Video yoksa aşağıdaki video-wrapper'ı ve içeriğini render etme-->
+                            <div class="video-wrapper">
+                                <div class="video">
+                                    <a data-fancybox="productVideo" href="/example-images/p1.mp4">
+                                        <i class="fas fa-video"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Buraya bir count ile if ekeleylim eğer 1 adetten FAZLA foto varsa aşağıdaki carousel'i bassın-->
+                    <div class="row mt-3">
+                        <div class="col">
+                            <div class="thumbnail-carousel owl-carousel owl-theme thumbnails">
+                                <div class="item">
+                                    <a href="example-images/pr-1.jpg" data-standard="example-images/pr-1-standart.jpg">
+                                        <img src="example-images/pr-1-thumbnail.jpg" class="w-100" alt="" />
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="example-images/pr-2.jpg" data-standard="example-images/pr-2-standart.jpg">
+                                        <img src="example-images/pr-2-thumbnail.jpg" class="w-100" alt="" />
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="example-images/pr-3.jpg" data-standard="example-images/pr-3-standart.jpg">
+                                        <img src="example-images/pr-3-thumbnail.jpg" class="w-100" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="name">Intel Core i9 9900K 16GB 1TB SSD Radeon VII Freedos PC</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="regcode">Ürün Kodu: <strong>AAA001</strong></span><span class="brand">Marka:
+                                <strong><a href="#">Go Gamer</a></strong></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="alert alert-secondary alert-sm">
+                                <strong>₺100</strong> üzeri alışverişlerde <span class="text-underline">kargo
+                                    bedava</span>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="fiyat">₺ 17,500.00</h2>
+                        </div>
+                    </div>
+                    <div class="row options">
+                        <div class="col-sm-3 d-flex align-items-center">RAM (Ön Bellek)</div>
+                        <div class="col-sm-7">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary active d-flex align-items-center">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 8 GB
+                                </label>
+                                <label class="btn btn-outline-primary d-flex align-items-center">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> 16 GB
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row options">
+                        <div class="col-sm-3 d-flex align-items-center">İşletim Sistemi</div>
+                        <div class="col-sm-7">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-primary active d-flex align-items-center">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Freedos
+                                </label>
+                                <label class="btn btn-outline-primary d-flex align-items-center">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> Linux (Ubuntu)
+                                </label>
+                                <label class="btn btn-outline-primary d-flex align-items-center">
+                                    <input type="radio" name="options" id="option3" autocomplete="off"> Windows 10 Pro
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row actions">
+                        <div class="col-sm-4">
+                            <input type="number" value="1" min="1" max="1000" />
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-main w-100"><i class="fas fa-shopping-cart mr-2"></i>Sepete
+                                Ekle</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button class="btn btn-wish"><img src="images/favori2.svg"></button>
+                        </div>
+                    </div>
+                    <div class="row shipping">
+                        <div class="col">
+                            <div class="shipping-wrapper">
+                                <i class="fas fa-truck"></i> <strong>2 gün</strong> içinde kargoya verilir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row share">
+                        <div class="col">
+                            <div class="addthis_inline_share_toolbox"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="ozellikler-tab" data-toggle="tab" href="#ozellikler"
+                                role="tab" aria-controls="ozellikler" aria-selected="true">Özellikler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="taksit-tab" data-toggle="tab" href="#taksit" role="tab"
+                                aria-controls="taksit" aria-selected="false">Taksit Seçenekleri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="yorum-tab" data-toggle="tab" href="#yorum" role="tab"
+                                aria-controls="yorum" aria-selected="false">Yorumlar (1)</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="ozellikler" role="tabpanel"
+                            aria-labelledby="ozellikler-tab">
+                            <p>
+                                Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı
+                                bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı
+                                galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak
+                                kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek
+                                değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren
+                                Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem
+                                Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="taksit" role="tabpanel" aria-labelledby="taksit-tab">
+                            <p>
+                                Yaygın inancın tersine, Lorem Ipsum rastgele sözcüklerden oluşmaz. Kökleri M.Ö. 45
+                                tarihinden bu yana klasik Latin edebiyatına kadar uzanan 2000 yıllık bir geçmişi vardır.
+                                Virginia'daki Hampden-Sydney College'dan Latince profesörü Richard McClintock, bir Lorem
+                                Ipsum pasajında geçen ve anlaşılması en güç sözcüklerden biri olan 'consectetur'
+                                sözcüğünün klasik edebiyattaki örneklerini incelediğinde kesin bir kaynağa ulaşmıştır.
+                                Lorm Ipsum, Çiçero tarafından M.Ö. 45 tarihinde kaleme alınan "de Finibus Bonorum et
+                                Malorum" (İyi ve Kötünün Uç Sınırları) eserinin 1.10.32 ve 1.10.33 sayılı bölümlerinden
+                                gelmektedir. Bu kitap, ahlak kuramı üzerine bir tezdir ve Rönesans döneminde çok popüler
+                                olmuştur. Lorem Ipsum pasajının ilk satırı olan "Lorem ipsum dolor sit amet" 1.10.32
+                                sayılı bölümdeki bir satırdan gelmektedir.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="yorum" role="tabpanel" aria-labelledby="yorum-tab">
+                            <div class="yorum">
+                                <h6>
+                                    <strong class="mr-2">ahmet hamdi tanpınar</strong>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-secondary"></i>
+                                </h6>
+                                <p>
+                                    1500'lerden beri kullanılmakta olan standard Lorem Ipsum metinleri ilgilenenler için
+                                    yeniden üretilmiştir. Çiçero tarafından yazılan 1.10.32 ve 1.10.33 bölümleri de 1914
+                                    H. Rackham çevirisinden alınan İngilizce sürümleri eşliğinde özgün biçiminden
+                                    yeniden üretilmiştir.
+                                </p>
+                            </div>
+                            <div class="yorum-yap">
+                                <h6><strong>Yorum Yap</strong></h6>
+                                <div class="form-group" id="rating-ability-wrapper">
+                                    <label class="control-label" for="rating">
+                                        <span class="field-label-header">Ürünü nasıl puanlarsınız?</span><br>
+                                        <span class="field-label-info"></span>
+                                        <input type="hidden" id="selected_rating" name="selected_rating" value=""
+                                            required="required">
+                                    </label>
+                                    <h2 class="bold rating-header">
+                                        <span class="selected-rating">0</span><small> / 5</small>
+                                    </h2>
+                                    <button type="button" class="btnrating btn btn-secondary" data-attr="1"
+                                        id="rating-star-1">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btnrating btn btn-secondary" data-attr="2"
+                                        id="rating-star-2">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btnrating btn btn-secondary" data-attr="3"
+                                        id="rating-star-3">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btnrating btn btn-secondary" data-attr="4"
+                                        id="rating-star-4">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btnrating btn btn-secondary" data-attr="5"
+                                        id="rating-star-5">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <form class="yorum-form">
+                                    <textarea class="form-control" id="textarea" name="textarea" placeholder="Yorumunuzu yazın."></textarea>
+                                    <button class="btn btn-main mt-3">Gönder</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/product-->
+
+    <!--footer-->
+    <footer>
+        <!--footer-top-->
+        <section class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="images/spot/29.jpg" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/footer-top-->
+        <!--footer-mid-->
+        <section class="footer-mid text-mobile-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mt-0 pt-0">Kurumsal</h6>
+                        <ul>
+                            <li><a href="#">Müşteri Hizmetleri</a></li>
+                            <li><a href="#">Firmamız Hakkında</a></li>
+                            <li><a href="#">Hesap Numaraları</a></li>
+                            <li><a href="#">Gizlilik Politikamız</a></li>
+                            <li><a href="#">Aydınlatma Metni</a></li>
+                            <li><a href="#">İletişim Bilgileri</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6 class="mt-0 pt-0">Alışveriş</h6>
+                        <ul>
+                            <li><a href="#">İade ve Değişim</a></li>
+                            <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                            <li><a href="#">Üyelik Sözleşmesi</a></li>
+                            <li><a href="#">Satış Sözleşmesi</a></li>
+                            <li><a href="#">KVKK</a></li>
+                            <li><a href="#">Sipariş Takip</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6 class="mt-0 pt-0">Bizi Takip Edin</h6>
+                        <p>Sosyal Medya hesaplarımızda her gün yeni kampanyalar sizleri bekliyor!</p>
+                        <div class="row">
+                            <div class="col-3">
+                                <a href="#" target="_blank"><img src="images/sos_fac.png" class="img-fluid"></a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" target="_blank"><img src="images/sos_ins.png" class="img-fluid"></a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" target="_blank"><img src="images/sos_twi.png" class="img-fluid"></a>
+                            </div>
+                            <div class="col-3">
+                                <a href="#" target="_blank"><img src="images/sos_you.png" class="img-fluid"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6 class="mt-0 pt-0">e-bülten</h6>
+                        <p>Hemen kayıt olun, yenilikleri ve indirimleri kaçırmayın.</p>
+                        <div class="input-group subscribe">
+                            <input type="text" class="form-control" placeholder="e-posta adresiniz" aria-label="search"
+                                aria-describedby="basic-addon1">
+                            <div class="input-group-append">
+                                <button class="btn btn-main" type="button">ARA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/footer-mid-->
+        <!--footer-bot-->
+        <section class="footer-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="images/cards.png" class="img-fluid">
+                        <p class="pt-3 pb-0 mb-0">Bu site <strong>IDA E-Ticaret</strong> yazılımı ile hazırlanmıştır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/footer-bot-->
+    </footer>
+    <!--/footer-->
+
+    <a target="_blank" class="pulse-button" title="WhatsApp Destek" href="https://wa.me/905524241989"></a>
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f97e4b07c701599"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous"></script>
+    <script src="scripts/easyzoom.js"></script>
+    <script src="scripts/bootstrap-input-spinner.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
