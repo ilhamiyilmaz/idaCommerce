@@ -17,7 +17,8 @@
 }
 
 /* Backgrounds */
-html{background-image:none;background-color:transparent;font-family: 'Roboto', sans-serif;}
+html{background-image:none;background-color:transparent;}
+body {font-family: 'Roboto', sans-serif !important;}
 #logo{background-image:none;background-color:#669900}
 #container{background:#FFFFFF}
 .wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
